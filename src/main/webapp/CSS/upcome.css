@@ -1,0 +1,94 @@
+#upcomedetails{
+        width: 100%;
+        height: 1000px;
+        background-color: beige;
+        display: block;
+        padding: 30px;
+    }
+    .movie-detail {
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr; /* 2 kolom yang setara */
+        gap: 20px;
+    }
+    .movie-box {
+        margin-top: 100px;
+        border: 1px solid #ccc;
+        padding: 50px;
+        margin-left: 200px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 1000px;
+        max-height: 850px;
+        background-color: #f9f9f9;
+    }
+    .video-box {
+            max-width: 560px;
+            margin-left: 30px;
+            text-align: center;
+            justify-content: center;
+        }
+    iframe {
+        width: 150%;
+        height: 473px;
+        justify-content: center;
+        } 
+    .bot{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        width: 825px;
+    }
+    /* CSS untuk mengatur bagian kiri */
+    .bot .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    }
+
+    /* CSS untuk bagian kanan */
+    .bot .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Memulai konten dari atas */
+}
+
+/* CSS untuk gaya teks */
+#title {
+    font-size: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 30px;
+    color: #9b005b;
+}
+
+.lefter{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* CSS untuk sinopsis */
+.righter {
+    margin-top: 30px; /* Memberi jarak atas dari elemen sebelumnya */
+    color: #9b005b;
+}
+
+.right p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.right h2 {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 20px;
+    font-weight: 2px;
+    color: #480b54;
+}
+.lefter2{
+    text-align: justify;
+    line-height: 1.6;
+    margin: 20px;
+    font-size: 15px;
+    color: #480b54;
+}

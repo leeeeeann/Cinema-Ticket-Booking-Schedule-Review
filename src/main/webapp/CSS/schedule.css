@@ -1,0 +1,142 @@
+#cinemaschedule{
+        width: 100%;
+        height: 3300px;
+        background-color: bisque;
+        display: block;
+        padding: 30px;
+    }
+   
+    #date {
+        padding-top: 7%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 20px;
+        color: rgb(200, 20, 80);
+    }
+
+    #clock {
+        padding-top: 7%;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: 20px;
+        color: rgb(200, 20, 80);
+    }
+    #movie-table {
+    width: 100%;
+    margin-top: 200px; /* Atur margin atas untuk menjaga jarak antara tabel dengan elemen di atasnya */
+    border-collapse: collapse;
+    width: 75%;
+    margin-left: 13%;
+
+}
+
+#movie-table th, #movie-table td {
+    padding: 10px;
+    text-align: center;
+    border: none; /* Hapus semua garis tepi */
+    color: rgb(116, 13, 48);
+}
+
+#movie-table th {
+    border-bottom: 3px solid rgb(116, 13, 48);; /* Garis bawah hanya pada header */
+}
+
+#movie-table img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Mengatur lebar kolom */
+#movie-table th:first-child,
+#movie-table td:first-child {
+    width: 25%; /* Lebar kolom pertama 25% dari lebar tabel */
+}
+
+#movie-table th:nth-child(2),
+#movie-table td:nth-child(2) {
+    width: 75%; /* Lebar kolom kedua 75% dari lebar tabel */
+    text-align: left;
+    padding-left: 6%;
+}
+
+/* Garis putih di antara baris */
+#movie-table tbody tr {
+    border-bottom: 3px solid rgb(116, 13, 48);; /* Garis putih di antara setiap baris */
+}
+
+/* Memberi latar belakang abu-abu untuk baris genap */
+#movie-table tbody tr:nth-child(even) {
+    background-color: bisque;
+}
+.movie-info {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.showtime-btn {
+    margin: 5px;
+    background-color: #592c53;
+    color: #e4d4b8;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    display: inline-block; /* Menggunakan inline-block untuk tata letak tombol */
+}
+
+.showtime-btn:hover {
+    background-color: #f2f2f2;
+    border: 2px solid #592c53;
+    cursor: pointer;
+}
+.showtime-btn-disabled {
+    background-color: white; /* Warna abu-abu */
+    color: #592c53; /* Warna teks abu-abu yang lebih gelap */
+    cursor: not-allowed; /* Kursor tidak dapat diaktifkan */
+}
+.apppopup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .apppopup-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        position: relative;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+.apppopup h2{
+    color: rgb(200, 20, 80);
+    font-size: 20px;
+    font-weight: bold;
+
+}   
